@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+import sys
+
+for line in sys.stdin:
+    try:
+        num = int(line)
+    except:
+        num = float(line)
+    
+    for power in range(1, 11):
+        result = num ** power
+        print(f"{num}^{power} = {result}")
+
