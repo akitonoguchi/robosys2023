@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+import sys
+
+result = 1
+
+for line in sys.stdin:
+    try:
+        num = int(line)
+    except:
+        num = float(line)
+    result *=num
+
+print(result)
