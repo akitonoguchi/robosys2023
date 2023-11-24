@@ -1,8 +1,8 @@
-
+#robosys2023
 [![test](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml)
 
-# robosys2023
-ロボットシステム学2023で利用したコマンド
+標準入力から読み込んだ数字を足したり掛けたりする
+
 
 ## 必要なソフトウェア
  * Python
@@ -12,7 +12,8 @@
  * Ubuntu
  
 ## インストール方法
- * git clone https://github.com/akitonoguchi/robosys2023.git
+
+ * 端末に　git clone git@github.com:akitonoguchi/robosys2023.git と入力するとインストールされます
 
 ##
 
@@ -20,22 +21,34 @@
 
 
 ## 使い方
-***
-seq n | ./plus_stdin
+
+**plusコマンド
+
+*seq n | ./plus*
  * １～ｎまでの整数の和を求めるコマンド
 
-***
-seq n | sed 's/$/.1/' | ./plus_stdin
+*seq n | sed 's/$/.a/' | ./plus*
  * １.０～ｎまでの小数の和を求めるコマンド
- * 's/$/.a/'のaの数字回分小数点第一位にnを足す 
+ * 's/$/.a/'の数字aを'a'とし、１.０～ｎ　それぞれの数字に追加し計算する
+
+**clossコマンド
+
+*seq n | ./cross*
+ * １～ｎまでの整数の積を求めるコマンド
+
+*seq n | sed 's/$/.a/' | ./cross*
+ * １.０～ｎまでの小数の積を求めるコマンド
+ * 's/$/.a/'の数字aを'a'とし、１.０～ｎ それぞれの数字に追加し計算する
 
 ## テスト結果
 ***
-seq 5 | .plus_stdin
+seq 5 | .plus
+
 15
 
 ***
-seq 5 | sed 's/$/.1/' | ./plus_stdin
+seq 5 | sed 's/$/.1/' | ./plus
+
 15.5
 
 ## 著作権　ライセンス
