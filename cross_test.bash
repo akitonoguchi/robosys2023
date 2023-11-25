@@ -1,3 +1,5 @@
 #!/bin/bash
 
-seq 5 | ./cross
+out=$(seq 5 | ./cross)
+
+[ "${out}" = 121 ]
