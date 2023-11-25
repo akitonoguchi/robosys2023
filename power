@@ -6,7 +6,9 @@ for line in sys.stdin:
         num = int(line)
     except:
         num = float(line)
+    
+    print(" ")
 
     for m in range(1, 11):
         result = pow(num,m)
-        print(f"{num}^{m} = {result}")
+        print(result)
