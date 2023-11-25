@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import sys
+
+for line in sys.stdin:
+    try:
+        num = int(line)
+    except:
+        num = float(line)
+
+    for m in range(1, 11):
+        result = pow(num,m)
+        print(f"{num}^{m} = {result}")
