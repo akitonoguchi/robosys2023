@@ -6,6 +6,7 @@ for line in sys.stdin:
         num = int(line)
     except:
         num = float(line)
+
     print(" ")
 
     if 1<= num <= 100:
@@ -14,4 +15,4 @@ for line in sys.stdin:
             print(result)
     else:
         print(f"Limit")
-
+        sys.exit()

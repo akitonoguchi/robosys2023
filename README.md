@@ -1,8 +1,9 @@
-#robosys2023
+###robosys2023
 [![test](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml)
 
 標準入力から読み込んだ数字を足したり掛けたりする
 
+n までの数字の 1 ~ 10 乗を計算する 
 
 ## 必要なソフトウェア
  * Python
@@ -16,29 +17,38 @@
  * 端末に　git clone git@github.com:akitonoguchi/robosys2023.git と入力するとインストールされます
  * cd robosys2023と入力してディレクトリに移動し,実行権限を付与するため以下のようにコマンドを入力してください
 
-　 chmod +x plus
-   chmod +x closs
+　 *chmod +x plus*
+
+   *chmod +x closs*
+
+   *chmod +x power*
 
 ## 使い方
 
 plusコマンド
 
 *seq n | ./plus*
- * １～ｎまでの整数の和を求めるコマンド
+ * 1 ~ n までの整数の和を求めるコマンド
 
 *seq n | sed 's/$/.a/' | ./plus*
- * １.０～ｎまでの小数の和を求めるコマンド
- * 's/$/.a/'の数字aを'.a'とし、１.０～ｎ　それぞれの数字に足して計算する
+ * 1.0 ~ n までの小数の和を求めるコマンド
+ * 's/$/.a/'の数字aを' .a'とし、1.0 ~ n それぞれの数字に足して計算する
 
-***
+**
 clossコマンド
 
 *seq n | ./cross*
- * １～ｎまでの整数の積を求めるコマンド
+ * 1 ~ n までの整数の積を求めるコマンド
 
 *seq n | sed 's/$/.a/' | ./cross*
- * １.０～ｎまでの小数の積を求めるコマンド
- * 's/$/.a/'の数字aを'.a'とし、１.０～ｎ それぞれの数字に足して計算する
+ * 1.0 ~ n までの小数の積を求めるコマンド
+ * 's/$/.a/'の数字aを' .a'とし、1.0 ~ n それぞれの数字に足して計算する
+
+**
+powerコマンド
+
+*seq n | ./cross*
+ * 1 ~ n の数の1 ~ 10乗を求めるコマンド(nの最大値は100)
 
 ## コマンドの実行例
 
