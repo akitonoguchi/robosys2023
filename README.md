@@ -47,7 +47,7 @@ clossコマンド
 ***
 powerコマンド
 
-*seq n | ./cross*
+*seq n | ./power*
  * 1 ~ n の数の1 ~ 10乗を求めるコマンド(nの最大値は100)
 
 *seq n | sed 's/$/.a/' | ./power*
@@ -79,25 +79,15 @@ seq 5 | sed 's/$/.1/' | ./cross
 seq 2 | .power
 
 1
-
 1
-
 1
-
 1
-
 1
-
 1
-
 1
-
 1
-
 1
-
 1
-
 
 2
 
