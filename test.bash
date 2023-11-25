@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xv
 # SPDX-FileCopyrightText: 2022 Ryuichi Ueda
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -21,7 +21,7 @@ num="1
 1
 1
 1
-1"
+10"
 
 [ "${out}" = "${num}" ] || ng ${LINENO}
 
