@@ -36,6 +36,16 @@ num="
 1024"
 
 [ "${out}" = "${num}" ] || ng ${LINENO}
+
+### STRANGE INPUT ###
+out=$(echo あ | ./power)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
+out=$(echo | ./power) #空文字
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
 [ "$res" = 0 ] && echo OK
 exit $res
 
