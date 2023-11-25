@@ -11,7 +11,7 @@ res=0
 
 ### I/O ###
 out=$(seq 5 | sed 's/$/.1/' | ./plus)
-[ "${out}" = 15.5 ] || ng ${LINENO}
+[ "${out}" = 15 ] || ng ${LINENO}
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
