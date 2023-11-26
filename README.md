@@ -16,9 +16,8 @@ chmod +x power023
  
 ### インストール方法
 
-端末に　`git clone git@github.com:akitonoguchi/robosys2023.git`   
-と入力するとインストールされます   
-`cd robosys2023` と入力した後
+1. 端末に　`git clone git@github.com:akitonoguchi/robosys2023.git`と入力します  
+2. `cd robosys2023` と入力した後
 実行権限を付与するため以下のようにコマンドを入力してください
 ```
 
@@ -31,6 +30,7 @@ chmod +x power
 
 **plusコマンド**
 
+
 `seq n | ./plus`
  * 1 ~ n までの整数の和を求めるコマンド
 
@@ -41,6 +41,7 @@ chmod +x power
 
 **clossコマンド**
 
+
 `seq n | ./cross`
  * 1 ~ n までの整数の積を求めるコマンド
 
@@ -50,6 +51,7 @@ chmod +x power
 
 
 **powerコマンド**
+
 
 `seq n | ./power`
  * 1 ~ n の数の1 ~ 10乗を求めるコマンド(nの最大値は100)
