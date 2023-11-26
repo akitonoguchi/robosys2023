@@ -1,8 +1,11 @@
-# robosys2023
+# robosys2
+chmod +x plus  
+chmod +x closs  
+chmod +x power023
 [![test](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml)
 
 標準入力から読み込んだ数字を足したり掛けたりします  
-n までの数字の 1 ~ 10 乗を計算します
+1 ~ n までの数字の 1 ~ 10 乗を計算します
 
 ### 必要なソフトウェア
  * Python
@@ -35,7 +38,7 @@ plusコマンド
  * 1.a ~ n.a までの小数の和を求めるコマンド
  * 's/$/.a/'の数字aを' .a'とし、1.0 ~ n.0 それぞれの数字に足して計算します
 
-***
+
 clossコマンド
 
 `seq n | ./cross`
@@ -45,7 +48,7 @@ clossコマンド
  * 1.a ~ n.a までの小数の積を求めるコマンド
  * 's/$/.a/'の数字aを' .a'とし、1.0 ~ n.0 それぞれの数字に足して計算します
 
-***
+
 powerコマンド
 
 `seq n | ./power`
@@ -59,12 +62,12 @@ powerコマンド
 ### コマンドの実行例
 ```
 
-seq 5 | .plus
+seq 5 | ./plus
 
 15
 ```
 
-***
+
 ```
 
 seq 5 | sed 's/$/.1/' | ./plus
@@ -72,15 +75,15 @@ seq 5 | sed 's/$/.1/' | ./plus
 15.5
 ```
 
-***
+
 ```
 
-seq 5 | .cross
+seq 5 | ./cross
 
 120
 ```
 
-***
+
 ```
 
 seq 5 | sed 's/$/.1/' | ./cross
@@ -88,10 +91,10 @@ seq 5 | sed 's/$/.1/' | ./cross
 149.73651
 ```
 
-***
+
 ```
 
-seq 2 | .power
+seq 2 | ./power
 
 1   
 1   
