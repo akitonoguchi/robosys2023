@@ -13,13 +13,16 @@ n までの数字の 1 ~ 10 乗を計算します
  
 ### インストール方法
 
- * 端末に　`git clone git@github.com:akitonoguchi/robosys2023.git` と入力するとインストールされます
+ * 端末に　`git clone git@github.com:akitonoguchi/robosys2023.git`   
+と入力するとインストールされます
  * `cd robosys2023` と入力してディレクトリに移動し  
 実行権限を付与するため以下のようにコマンドを入力してください
+```
 
-	`chmod +x plus  
-	 chmod +x closs  
-	 chmod +x power`
+chmod +x plus  
+chmod +x closs  
+chmod +x power
+```
 
 ### 使い方
 
