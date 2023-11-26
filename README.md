@@ -1,7 +1,4 @@
-# robosys2
-chmod +x plus  
-chmod +x closs  
-chmod +x power023
+# robosys2023
 [![test](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml)
 
 標準入力から読み込んだ数字を足したり掛けたりします  
@@ -16,7 +13,8 @@ chmod +x power023
  
 ### インストール方法
 
-1. 端末に　`git clone git@github.com:akitonoguchi/robosys2023.git`と入力します  
+1. 端末に`git clone git@github.com:akitonoguchi/robosys2023.git`と入力します  
+
 2. `cd robosys2023` と入力した後
 実行権限を付与するため以下のようにコマンドを入力してください
 ```
