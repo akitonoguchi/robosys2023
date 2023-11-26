@@ -1,21 +1,21 @@
-## robosys2023
+# robosys2023
 [![test](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/akitonoguchi/robosys2023/actions/workflows/test.yml)
 
-標準入力から読み込んだ数字を足したり掛けたりします
-
+標準入力から読み込んだ数字を足したり掛けたりします  
 n までの数字の 1 ~ 10 乗を計算します
 
-## 必要なソフトウェア
+### 必要なソフトウェア
  * Python
-    * テスト済み: 3.7 ~ 3.10
+    * テスト済みバージョン: 3.7 ~ 3.10
 
-## テスト環境
- * Ubuntu
+### テスト環境
+ * Ubuntu 20.04
  
-## インストール方法
+### インストール方法
 
- * 端末に　git clone git@github.com:akitonoguchi/robosys2023.git と入力するとインストールされます
- * cd robosys2023と入力してディレクトリに移動し,実行権限を付与するため以下のようにコマンドを入力してください
+ * 端末に　`npm run dev` git clone git@github.com:akitonoguchi/robosys2023.git `npm run dev` と入力するとインストールされます
+ * cd robosys2023と入力してディレクトリに移動し  
+実行権限を付与するため以下のようにコマンドを入力してください
 
 	*chmod +x plus*
 
@@ -23,7 +23,7 @@ n までの数字の 1 ~ 10 乗を計算します
 
 	*chmod +x power*
 
-## 使い方
+### 使い方
 
 plusコマンド
 
@@ -54,7 +54,7 @@ powerコマンド
  * 1.a ~ n.a の数の1 ~ 10乗を求めるコマンド(浮動小数点数の計算のためわずかな誤差が生じます)
  * 's/$/.a/'の数字aを' .a'とし、1.0 ~ n.0 それぞれの数字に足して計算します
 
-## コマンドの実行例
+### コマンドの実行例
 
 seq 5 | .plus
 
@@ -119,7 +119,7 @@ seq 2 | .power
 1024
 
 
-## 著作権　ライセンス
+### 著作権　ライセンス
  *このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 
  *このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたもの  です．
